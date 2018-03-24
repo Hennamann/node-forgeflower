@@ -1,0 +1,38 @@
+{
+  "name": "forgeflower",
+  "version": "1.0.0",
+  "description": "Simple forgeflower java decompiler wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "require-self && cd ForgeFlower && gradle build -x ForgeFlower:test && cd .. && mv ForgeFlower/ForgeFlower/build/libs/*.jar ./forgeflower.jar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hennamann/node-forgeflower.git"
+  },
+  "keywords": [
+    "fernflower",
+    "forgeflower",
+    "java",
+    "decompiler",
+    "wrapper"
+  ],
+  "author": "Ole Henrik Stabell <ole@henrikstabell.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/hennamann/node-forgeflower/issues"
+  },
+  "homepage": "https://github.com/hennamann/node-forgeflower#readme",
+  "dependencies": {
+    "es6-promisify": "^3.0.0",
+    "extract-zip": "^1.5.0",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "require-self": "^0.1.0"
+  },
+  "bin": {
+    "forgeflower": "./bin/cli.js"
+  }
+}
