@@ -1,6 +1,6 @@
 # node-forgeflower
 
-A simple wrapper for the [ForgeFlower](https://github.com/MinecraftForge/ForgeFlower) java decompiler, made with Node.js
+A simple wrapper for the [ForgeFlower](https://github.com/MinecraftForge/ForgeFlower) java decompiler, made with Node.js.
 
 It's largely based on the existing source code for [node-fernflower](https://github.com/rom1504/node-fernflower) but altered to use ForgeFlower instead of Fernflower.
 
@@ -8,7 +8,7 @@ It's largely based on the existing source code for [node-fernflower](https://git
 
 ### CLI Installation
 
-A CLI interface for ForgeFlower can be installed with 
+A CLI interface for ForgeFlower can be installed with the following command: 
 
 ```bash
 npm install -g fernflower
